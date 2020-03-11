@@ -1,0 +1,24 @@
+h2{
+    visibility: hidden;
+}
+
+body {
+    background-color: white;
+}
+
+/* aparece somente quando a tela é menor que 600px */
+@media (min-width: 600px) and (max-width: 700px){
+    h2{
+        visibility: visible;
+    }
+}
+
+/* Aparece somente ao imprimir o site */
+@media print {
+    h1 {
+        color: red;
+    }
+    h2 {
+        visibility: visible;
+    }
+}
